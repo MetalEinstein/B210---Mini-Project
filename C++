@@ -61,8 +61,8 @@ do{         /* Our first loop --(1) START-- */
 
           switch(first_display)  /* A switch statement checks for a list or values. The values are called cases */
           {
-           case 1:
-        do
+           case 1:  /* If "1" is pressed, do what's inside the case */ 
+        do          /* Our third loop --(3) START-- */  
         {
 
 
@@ -82,18 +82,18 @@ do{         /* Our first loop --(1) START-- */
                    system("gnome-terminal -x sh -c 'bash -i -c /home/rasmus/Desktop/Launcher/RosNodes/test.py;' exec bash");
                    sleep(10);
                    system("gnome-terminal -x sh -c 'bash -i -c /home/rasmus/Desktop/Launcher/RosNodes/test2.py;' exec bash");
-                   break;
+                   break;  /* A break exits the switch statement and reads the next line of code */
 
                    case 'Y':
 
                    break;
 
-                   default:
+                   default:  /* If a nonexistent case is chosen, do the following */ 
 
                    cout << "That case does not yet exist, please try again:\n";
                  }
 
-            }while(second_display != 'A' && second_display != 'Y');
+            }while(second_display != 'A' && second_display != 'Y'); /* Our third loop --(3) STOP-- */
 
 
             break;
