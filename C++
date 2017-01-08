@@ -1,13 +1,13 @@
-#include <iostream>
+#include <iostream>                                                             
 #include <string>
 #include <math.h>
 #include <vector>
 #include <stdlib.h>
-#include <iomanip>
+#include <iomanip> 
 #include <ctime>
 #include <cstdlib>
 #include <time.h>
-#include <cstdlib>
+#include <cstdlib>      /* "#include" Just mean that we are importing a library, this gives our program new functions.*/
 #include <list>
 #include <queue>
 #include <stack>
@@ -16,11 +16,11 @@
 #include <unistd.h>
 using namespace std;
 
-int main()
+int main()             
 {
-    int awnser = 1;
+    int awnser = 1;       /* "int" can be used for numeric variables */
     int first_display;
-    char second_display;
+    char second_display;  /* "char" can hold characters */ 
     char reply;
 
     time_t now = time(0);
@@ -50,8 +50,8 @@ int main()
     cout <<"................................................................................\n";
     cout << "\n";
 
-do{
- do{
+do{         /* Our first loop --(1) START-- */
+ do{        /* Our second loop --(2) START-- */
     cout <<"If you want to take a look at your ROS-NODE library, press [1]\n";
     cout << "\n";
     cout << "You selected: ";
@@ -104,9 +104,9 @@ do{
             cout << "That case does not yet exist, please try again:\n";
             break;
            }
-           }while(second_display == 'Y');
+           }while(second_display == 'Y');  /* Our second loop --(2) STOP-- */
 
-  }while(first_display != 1);
+  }while(first_display != 1);   /* Our first loop --(1) STOP-- */
 
         return 0;
 
