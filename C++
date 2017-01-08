@@ -23,15 +23,15 @@ int main()
     char second_display;  /* "char" can hold characters */ 
     char reply;
 
-    time_t now = time(0);
-    tm *ltm = localtime(&now);
+    time_t now = time(0);         /* We define the time */
+    tm *ltm = localtime(&now);    /* And the localtime */
 
 
-   if(ltm->tm_hour < 6-00-00){
+   if(ltm->tm_hour < 6-00-00){        /* if "Something" do "Something" */
     cout << "                         You should sleep, but anyway\n";
    }
 
-   else if(ltm->tm_hour >= 6-00-00 && ltm->tm_hour <= 12-00-00){
+   else if(ltm->tm_hour >= 6-00-00 && ltm->tm_hour <= 12-00-00){  /* Or do something else if "something */
     cout << "                              Good Morning And\n";
    }
 
@@ -45,7 +45,7 @@ int main()
 
 
 
-    cout << "\n";
+    cout << "\n"; /* "\n" is the same as endl; */
     cout << "                           WELCOME TO THE PROGRAM\n";
     cout <<"................................................................................\n";
     cout << "\n";
