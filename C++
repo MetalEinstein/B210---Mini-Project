@@ -59,7 +59,7 @@ do{         /* Our first loop --(1) START-- */
     cout << "................................................................................\n";
     cout << "\n";
 
-          switch(first_display)
+          switch(first_display)  /* A switch statement checks for a list or values. The values are called cases */
           {
            case 1:
         do
