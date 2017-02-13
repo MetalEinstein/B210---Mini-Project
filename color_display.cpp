@@ -9,12 +9,11 @@ ROS_INFO("red: %d, green: %d, blue: %d", col->r, col->g, col->b);
 }
 
 /* Callback from the pose node */
-void pose_callback(const turtlesim::Pose& msgIn){
-
+void pose_callback(const turtlesim::Pose& msgIn)
+{
 ROS_INFO_STREAM(std::setprecision(2) << std::fixed
 << "position=(" << msgIn.x << "," << msgIn.y << ")"
 << "direction=" << msgIn.theta); 
-  
 }
 
 int main(int argc, char **argv)
@@ -29,8 +28,6 @@ int main(int argc, char **argv)
     
  
  ros::Subscriber subscriber_color = node.subscribe("/turtle1/color_sensor", 1, color_callback);
-
-    
  ros::Subscriber subscriber_pose=node.subscribe("turtle1/pose", 1, pose_callback);
 
  /* The ROS spin will make the code enter a loop so we keep getting callbacks */ 
