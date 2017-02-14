@@ -24,8 +24,6 @@ int main(int argc, char **argv)
 
  /* create a node handle: it is reference assigned to a new node */
  ros::NodeHandle node;
-
-    
  
  ros::Subscriber subscriber_color = node.subscribe("/turtle1/color_sensor", 1, color_callback);
  ros::Subscriber subscriber_pose=node.subscribe("turtle1/pose", 1, pose_callback);
