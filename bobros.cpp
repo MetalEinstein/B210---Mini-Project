@@ -46,11 +46,11 @@ int main(int argc, char **argv)
         cout << "Good Morning User\n";
         }
 
-        else if(ltm->tm_hour > 12 && ltm->tm_hour < 18){
+        else if(ltm->tm_hour >= 12 && ltm->tm_hour <= 18){
         cout << "Good Afternoon User\n";
         }
 
-        else if(ltm->tm_hour >= 18 && ltm->tm_hour < 24){
+        else if(ltm->tm_hour >= 18 && ltm->tm_hour <= 24){
         cout << "Good Evening User\n";
         }
     
