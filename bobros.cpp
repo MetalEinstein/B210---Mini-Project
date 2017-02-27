@@ -88,8 +88,8 @@ int main(int argc, char **argv)
                   case 'A':   /* This case will make a star */
 
                   rotate(degrees2radians(70), degrees2radians(90), 1);
-                  /* Here we are rotating with a desired speed and angle */
-   
+                  /* Here we are rotating with a desired speed and angle (1 = Counterclockwise and 0 = Clockwise) */
+    
                   rotate(degrees2radians(70), degrees2radians(36), 0);
                   move(6, 2, 1); /* Here we are moveing with a desired speed, distance and in forward motion (1 = forward and 0 = backward */
 
