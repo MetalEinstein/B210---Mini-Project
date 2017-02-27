@@ -91,7 +91,7 @@ int main(int argc, char **argv)
                   /* Here we are rotating with a desired speed and angle */
    
                   rotate(degrees2radians(70), degrees2radians(36), 0);
-                  move(6, 2, 1); /* Here we are moveing with a desired speed, distance and in forward motion (0 = forward and 1 = backward */
+                  move(6, 2, 1); /* Here we are moveing with a desired speed, distance and in forward motion (1 = forward and 0 = backward */
 
                   rotate(degrees2radians(70), degrees2radians(144), 0);
                   move(6, 2, 1);
